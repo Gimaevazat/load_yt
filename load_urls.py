@@ -1,8 +1,10 @@
 def load_urls_from_txt(txt_name: str = 'urls.txt') -> list:
     '''
     Выгрузка url из файла
+
     :param txt_name:
     Название файла с url
+
     :return:
     Массив с url
     '''
@@ -13,5 +15,7 @@ def load_urls_from_txt(txt_name: str = 'urls.txt') -> list:
 
     return urls
 
+
 if __name__ == '__main__':
     print(load_urls_from_txt())
+    print(r'/\:*?<>|')

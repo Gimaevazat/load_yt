@@ -1,20 +1,24 @@
 from pytubefix import YouTube
 from pytubefix.cli import on_progress
 
+
 #Тк ютуб забанен из России, то нужно прокси
 proxies = {
     'http': f'http://user:pass@IP:PORT',
     'https': f'http://user:pass@IP:PORT',
 }
 
+
 def load_video_and_audio(url: str, output_path: str):
     '''
     Загрузка видео и аудио
     Видео загружается в самом высоком разрешении. Аудио в видео не гарантируется
+
     :param url:
     Url видео
     :param output_path:
     Путь, куда будут сохраняться файлы
+
     :return:
     Название видео с ютуба
     '''
